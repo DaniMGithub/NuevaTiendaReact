@@ -1,13 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-function App() {
+
+
+function App() {  
   return (
-    <div className="App">
+    <Container className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
+      <Row>
+      <Col xs={3}> <img src={logo} className="App-logo" alt="logo" /></Col>
+      <Col xs={3}><img src={logo} className="App-logo" alt="logo" /></Col>
+      <Col xs={3}><img src={logo} className="App-logo" alt="logo" /></Col>     
+       
+      </Row>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edita el codigo <code>src/App.js</code> y guarda lo editado.
         </p>
         <a
           className="App-link"
@@ -15,11 +26,13 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Aprende React
         </a>
       </header>
-    </div>
+    </Container>
+  
   );
 }
+
 
 export default App;
